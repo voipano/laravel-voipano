@@ -44,7 +44,22 @@ class EndpointsTest extends TestCase
     #[DataProvider('endpoints')]
     public function test_endpoint_method_and_url(string $method, string $path, \Closure $execute): void
     {
-        Http::fake(['*' => Http::response(['ok' => true], 200)]);
+        $isRecording = in_array($path, [
+            '/call-recordings/cdr',
+            '/voicemail-recordings/vm',
+        ], true);
+
+        Http::fake([
+            '*' => Http::response(
+                $isRecording ? 'test-binary-payload' : ['ok' => true],
+                200,
+                [
+                    'Content-Type' => $isRecording
+                        ? 'application/octet-stream'
+                        : 'application/json',
+                ]
+            ),
+        ]);
         $client = app(Client::class);
         $execute($client);
         Http::assertSent(function (Request $request) use ($method, $path): bool {
