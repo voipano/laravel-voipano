@@ -23,6 +23,8 @@
 composer require voipano/laravel:^1.0
 ```
 
+صفحه رسمی پکیج: [Packagist](https://packagist.org/packages/voipano/laravel)
+
 پکیج به‌صورت خودکار در Laravel ثبت می‌شود. فقط توکن API را در فایل `.env` پروژه خود قرار دهید:
 
 ```dotenv

@@ -23,6 +23,8 @@ Install the published package from Packagist:
 composer require voipano/laravel:^1.0
 ```
 
+Official package: [Packagist](https://packagist.org/packages/voipano/laravel)
+
 Laravel automatically discovers the service provider. Set the API token in your **application's** `.env`:
 
 ```dotenv
