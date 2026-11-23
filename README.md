@@ -1,5 +1,10 @@
 # Voipano Laravel SDK
 
+[![Tests](https://github.com/voipano/laravel-voipano/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/voipano/laravel-voipano/actions/workflows/tests.yml)
+[![Packagist Version](https://img.shields.io/packagist/v/voipano/laravel)](https://packagist.org/packages/voipano/laravel)
+[![License](https://img.shields.io/github/license/voipano/laravel-voipano)](LICENSE)
+[![Documentation](https://img.shields.io/badge/docs-EN%20%7C%20FA-blue)](README.md)
+
 [راهنمای فارسی](README.fa.md) | [Postman collection](docs/voipano-webservice.postman_collection.json) | [Security](SECURITY.md)
 
 A Laravel package for the **Voipano Public Webservice API v1**, providing an easy-to-use facade, typed exceptions, and resource clients for all **23 requests** in the official Postman collection (documentation version `2026.11.21`).
@@ -12,7 +17,7 @@ A Laravel package for the **Voipano Public Webservice API v1**, providing an eas
 
 ## Installation
 
-After the Git repository has been tagged `v1.0.0` and registered on Packagist:
+Install the published package from Packagist:
 
 ```bash
 composer require voipano/laravel:^1.0

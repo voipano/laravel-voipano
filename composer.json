@@ -15,8 +15,8 @@
   ],
   "homepage": "https://voipano.com",
   "support": {
-    "issues": "https://github.com/voipano/laravel/issues",
-    "source": "https://github.com/voipano/laravel"
+    "issues": "https://github.com/voipano/laravel-voipano/issues",
+    "source": "https://github.com/voipano/laravel-voipano"
   },
   "require": {
     "php": "^8.2",

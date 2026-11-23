@@ -1,5 +1,10 @@
 # پکیج رسمی Laravel ویپانو
 
+[![Tests](https://github.com/voipano/laravel-voipano/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/voipano/laravel-voipano/actions/workflows/tests.yml)
+[![Packagist Version](https://img.shields.io/packagist/v/voipano/laravel)](https://packagist.org/packages/voipano/laravel)
+[![License](https://img.shields.io/github/license/voipano/laravel-voipano)](LICENSE)
+[![Documentation](https://img.shields.io/badge/docs-EN%20%7C%20FA-blue)](README.fa.md)
+
 [English README](README.md) | [کالکشن Postman](docs/voipano-webservice.postman_collection.json)
 
 پکیج Laravel برای وب‌سرویس عمومی ویپانو (API v1) با پشتیبانی از تمام **۲۳ درخواست** تعریف‌شده در کالکشن مورخ `2026.11.21`. بدون نیاز به نوشتن دستی درخواست‌های HTTP می‌توانید مخاطبین، گروه‌ها، گزارش تماس، فایل‌های ضبط، وبهوک، OTP صوتی و تماس‌های خروجی را مدیریت کنید.
@@ -12,7 +17,7 @@
 
 ## نصب
 
-پس از انتشار مخزن با تگ `v1.0.0` در Packagist:
+پکیج منتشرشده را از Packagist نصب کنید:
 
 ```bash
 composer require voipano/laravel:^1.0
